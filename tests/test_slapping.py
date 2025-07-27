@@ -23,7 +23,7 @@ def test_single_slaps():
 def test_multi_slaps(test_input, expected):
     assert slap_many(LikeState.empty, test_input) is expected
 
-
+ 
 @pytest.mark.skip(reason="regexes not supported yet")
 def test_regex_slaps():
     assert slap_many(LikeState.empty, '[ld]*ddl') is LikeState.liked
